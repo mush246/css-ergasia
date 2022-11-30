@@ -1,15 +1,16 @@
+
+ /* custom properties */  
 :root{
     --clr-accent-400: hsl(328, 35%, 74%); 
     --clr-accent-100: hsl(350, 100%, 88%) ;
 
     --clr-primary-400: hsl(220, 16%, 26%);
     --clr-primary-100: hsl(221, 7%, 42%);
+    
 
     --clr-neutral-100: hsl(0, 0%, 99%);
-    --clr-neutral-200: hsl(0, 0%, 89%); /*bottom footer*/
+    --clr-neutral-200: hsl(0, 0%, 89%);
     --clr-neutral-300: hsl(210, 33%, 98%);
-    --clr-neutral-150: hsl(0, 0%, 95%); /*top part of footer*/
-    
 
     --ff-primary: 'Roboto', sans-serif ; 
     --ff-body: var(--ff-primary);
@@ -34,8 +35,7 @@
     --fs-button: var(--fs-550);
 }
 
-
-
+/* ------CSS RESET------
 
 /* Box sizing rules */
 *,
@@ -110,57 +110,7 @@ picture {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ACCESSIBILITY SECTION */ 
-
-/* Remove all animations, transitions and smooth scroll for people that prefer not to see them  (isws overkill) */
-@media (prefers-reduced-motion: reduce) {
-    html:focus-within {
-     scroll-behavior: auto;
-    }
-    
-    *,
-    *::before,
-    *::after {
-      animation-duration: 0.01ms !important;
-      animation-iteration-count: 1 !important;
-      transition-duration: 0.01ms !important;
-      scroll-behavior: auto !important;
-    }
-  }
-
-
-
- /* UTILITY CLASSES */ 
+/* UTILITY CLASSES */ 
 
 
 .text-primary-400 {
@@ -208,10 +158,6 @@ picture {
     background-color: var(--clr-neutral-300);
 }
 
-.bg-neutral-150{
-    background-color: var(--clr-neutral-150);
-}
-
 .fw-bold { font-weight: var(--fw-bold); } 
 .fw-light { font-weight: var(--fw-light); } 
 .fw-regular { font-weight: var(--fw-regular); } 
@@ -231,25 +177,18 @@ picture {
 .fs-550 { font-size: var(--fs-550); }
 
 
+
+
+
+
+
+
 /* header background color  */
 
 .bg-header {
     background: linear-gradient(0deg, rgba(251, 247, 245, 0.4), rgba(251, 247, 245, 0.4)), linear-gradient(0deg, rgba(213, 156, 184, 0.2), rgba(213, 156, 184, 0.2)), #F4CED9;
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* Navigation Bar */
@@ -279,69 +218,3 @@ picture {
     
 }
 
-.section1{
-
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.section1 img {
-    min-width: 100%; 
-    max-height: 37.75rem;
-}
-
-
-.section-container{
-    display: flex;
-    flex-direction: column;
-    min-width: 100%;
-    min-height: 22rem;
-    align-items: center;
-    justify-content: center;
-    gap: 1.8rem;
-}
-
-.button-container {
-    display: flex;
-    gap: 3rem;
-}
-
-.button1{
-    background: #FDFDFD;
-    border: 1px solid var(--clr-accent-100);
-    border-radius: 4.8rem;
-    font-size: var(--fs-button);
-    padding: 10px;
-    height: 50px;
-    width: 150px;
-    display: inline-block;
-    
-}
-
-.button1 a {
-    text-decoration: none;
-    color: var(--clr-accent-100);
-    font-size: var(--fs-500);
-
-    
-}
-
-.button2{
-    background: var(--clr-accent-100);
-    border: 1px solid var(--clr-accent-100);
-    border-radius: 4.8rem;
-    font-size: var(--fs-button);
-    padding: 10px;
-    display: inline-block;
-    
-}
-
-.button2 a {
-    text-decoration: none;
-    color: var(--clr-neutral-100);
-    font-size: var(--fs-500);
-    padding: 20px;
-
-    
-}
