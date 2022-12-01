@@ -313,75 +313,7 @@ footer{
     
 }
 
-.section1{
 
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.section1 img {
-    min-width: 100%; 
-    max-height: 37.75rem;
-}
-
-
-.section-container{
-    display: flex;
-    flex-direction: column;
-    min-width: 100%;
-    min-height: 22rem;
-    align-items: center;
-    justify-content: center;
-    gap: 1.8rem;
-    flex-wrap: wrap;
-}
-
-.button-container {
-    display: flex;
-    gap: 3rem;
-}
-
-.button1{
-    background: #FDFDFD;
-    border: 1px solid var(--clr-accent-100);
-    border-radius: 4.8rem;
-    font-size: var(--fs-button);
-    padding: 0.5rem;
-    min-height: 3.5rem;
-    min-width: 9.5rem;
-    height: auto;
-    display: inline-block;
-    line-height: 0;
-    
-}
-
-.button1 a {
-    text-decoration: none;
-    color: var(--clr-accent-100);
-    font-size: var(--fs-500);
-
-    
-}
-
-.button2{
-    background: var(--clr-accent-100);
-    border: 1px solid var(--clr-accent-100);
-    border-radius: 4.8rem;
-    font-size: var(--fs-button);
-    padding: 10px;
-    display: inline-block;
-    
-}
-
-.button2 a {
-    text-decoration: none;
-    color: var(--clr-neutral-100);
-    font-size: var(--fs-500);
-    padding: 20px;
-
-    
-}
 
 
 
