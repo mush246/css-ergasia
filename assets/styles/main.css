@@ -1,16 +1,18 @@
-
- /* custom properties */  
 :root{
-    --clr-accent-400: hsl(328, 35%, 74%); 
+    --clr-accent-400: hsl(328, 35%, 74%) ; 
     --clr-accent-100: hsl(350, 100%, 88%) ;
+    --clr-accent-500: hsl(304, 29%, 69%); 
 
     --clr-primary-400: hsl(220, 16%, 26%);
     --clr-primary-100: hsl(221, 7%, 42%);
-    
+    --clr-primary-300: hsl(0, 0%, 34%);
+    --clr-primary-50:  hsl(30, 1%, 46%);
 
     --clr-neutral-100: hsl(0, 0%, 99%);
-    --clr-neutral-200: hsl(0, 0%, 89%);
+    --clr-neutral-200: hsl(0, 0%, 89%); /*bottom footer*/
     --clr-neutral-300: hsl(210, 33%, 98%);
+    --clr-neutral-150: hsl(0, 0%, 95%); /*top part of footer*/
+    
 
     --ff-primary: 'Roboto', sans-serif ; 
     --ff-body: var(--ff-primary);
@@ -35,7 +37,8 @@
     --fs-button: var(--fs-550);
 }
 
-/* ------CSS RESET------
+
+
 
 /* Box sizing rules */
 *,
@@ -72,6 +75,9 @@ body {
     text-rendering:  optimizeSpeed;
     line-height: 1.5;    /* maybe change after*/ 
     font-family: var(--ff-body); 
+
+    display: flex;
+    flex-direction: column;
   }
 
 
@@ -87,6 +93,20 @@ svg,
 picture {
     max-width: 100%;
     display: block;
+}
+
+
+
+
+a{
+    text-decoration: none;
+    color: inherit;
+    
+}
+
+
+footer{
+    margin-top: auto;
 }
 
 
@@ -110,14 +130,72 @@ picture {
 
 
 
-/* UTILITY CLASSES */ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ACCESSIBILITY SECTION */ 
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them  (isws overkill) */
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+     scroll-behavior: auto;
+    }
+    
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+
+
+
+ /* UTILITY CLASSES */ 
 
 
 .text-primary-400 {
     color: var(--clr-primary-400);
   }
+.text-primary-300{
+    color: var(--clr-primary-300);
+}
 .text-primary-100 {
     color: var(--clr-primary-100);
+}
+.text-primary-50{
+    color: var(--clr-primary-50);
+}
+
+.text-accent-500{
+    color: var(--clr-accent-500);
 }
 .text-accent-400 {
     color: var(--clr-accent-400);
@@ -158,6 +236,10 @@ picture {
     background-color: var(--clr-neutral-300);
 }
 
+.bg-neutral-150{
+    background-color: var(--clr-neutral-150);
+}
+
 .fw-bold { font-weight: var(--fw-bold); } 
 .fw-light { font-weight: var(--fw-light); } 
 .fw-regular { font-weight: var(--fw-regular); } 
@@ -177,12 +259,6 @@ picture {
 .fs-550 { font-size: var(--fs-550); }
 
 
-
-
-
-
-
-
 /* header background color  */
 
 .bg-header {
@@ -191,15 +267,34 @@ picture {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Navigation Bar */
 
 
-.container {
+.nav-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.6rem 3%; 
+    overflow: hidden; /*ponos */ 
+    height: 4rem;
 }
+
+.nav-container a img {
+    padding-left: 0.6rem;
+}
+
 
 .main-nav a {
 
@@ -218,3 +313,96 @@ picture {
     
 }
 
+
+
+
+
+
+/* FOOTER SECTION */ 
+
+.column-container{
+
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.left-footer-row-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.info-column-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+    
+
+}
+
+.socials-row-container{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    justify-content:flex-start;
+    align-items: center;
+    margin-top: 0.5rem;
+    
+}
+
+.right-footer-row-container{
+    display: flex;
+    flex-direction: row;
+    gap: 6rem;
+    justify-content: flex-end;
+
+}
+
+.left-inner-footer-row-container{
+    display: flex;
+    flex-direction: row;
+    width: 7.5rem;
+}
+
+.middle-inner-footer-row-container{
+    display: flex;
+    flex-direction: row;
+    width: 7.5rem;
+}
+
+.right-inner-footer-row-container{
+    display: flex;
+    flex-direction: row;
+    width: 7.5rem;
+}
+
+.bottom-footer-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 4rem;
+    align-items: center;
+    flex-wrap: wrap;
+    
+
+}
+
+.upper-footer-container{
+    display: flex;
+    justify-content: space-around;
+    height: 16rem;
+    flex-wrap: wrap;
+    border-top: 1px solid var(--clr-primary-50);
+}
+
+.line{
+    border-bottom: 1px solid;
+    min-width: 7.5rem;
+}
+
+
+.copyright-container{
+    padding-left: 0.5rem;
+}
