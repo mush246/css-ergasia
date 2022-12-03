@@ -1,2 +1,50 @@
 @import url(style.css);
 
+/* Text */
+
+p {
+    font-size: 18px;
+    padding: 5px;
+    padding-bottom: 50px;
+}
+
+ul {
+    list-style-type: square;
+    padding-left: 35px;
+    margin: 5px;
+}
+
+hover {
+    color: pink;
+}
+
+/* Table */
+
+.styled-table {
+    border-collapse: collapse;
+    margin: 25px;
+    font-size: 0.9em;
+    min-width: 400px;
+    box-shadow: 0 0 25px #e9e9e9
+}
+
+.styled-table thead tr {
+    background-color: hsl(332, 52%, 86%);
+}
+
+.styled-table td {
+    background-color: hsl(353, 100%, 98%); 
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 7px 14px;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid hsl(320, 11%, 5%);
+}
+
+table, th, td {
+    border: 1px solid;
+  }
