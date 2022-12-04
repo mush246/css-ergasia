@@ -262,7 +262,8 @@ footer{
 /* header background color  */
 
 .bg-header {
-    background: linear-gradient(0deg, rgba(251, 247, 245, 0.4), rgba(251, 247, 245, 0.4)), linear-gradient(0deg, rgba(213, 156, 184, 0.2), rgba(213, 156, 184, 0.2)), #F4CED9;
+    background-color: var(--clr-accent-400);
+    border-bottom: 1.5px solid var(--clr-primary-50);
 
 }
 
@@ -309,7 +310,7 @@ footer{
 .main-nav ul li {
     display: inline-block;
     list-style-type: none;
-    padding: 0.6rem 1.25rem;
+    padding: 0.6rem 2.5rem;
     
 }
 
@@ -318,6 +319,7 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    
 }
 
 .section1 img {
