@@ -539,3 +539,40 @@ footer{
     align-self: center;
 }
 
+
+.column-container-price-specs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.info-desc-container{
+    
+    padding: 1rem;
+    align-self:flex-start;
+}
+
+.info-list{
+    list-style: inside;
+    list-style-type: disc;
+}
+
+.info-list li {
+    padding-bottom: 1.25rem;
+}
+
+.specs-list{
+    list-style: inside;
+    padding-left: 1.5rem;
+}
+
+.specs-list li {
+    padding-top: .5rem;
+}
+
+
+.p-container{
+    text-align: center;
+}
