@@ -14,7 +14,7 @@ ul {
     margin: 5px;
 }
 
-hover {
+a:hover {
     color: pink;
 }
 
