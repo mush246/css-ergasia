@@ -576,3 +576,117 @@ footer{
 .p-container{
     text-align: center;
 }
+
+.socials-row-container img{
+    height: 32px;
+    width: 32px;
+}
+
+.partners-section{
+    display: flex;
+    justify-content: space-around;
+    min-height: 7rem;
+    align-items: center;
+    border-bottom: 1px solid hsl(220, 16%, 26%);
+
+}
+
+
+
+
+
+.partners-img-container img{
+    max-height: 2.5rem;
+}
+
+.video-section{
+    display: flex;
+    justify-content: space-around;
+    padding: 3rem;
+}
+
+.video-container{
+    border-radius: 2.813rem;
+    overflow: hidden;
+
+}
+
+
+
+
+
+
+
+
+
+/* roz section opws sto product-details*/ 
+
+.feature-section{
+    min-height: 24rem;
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+ }
+  
+ 
+ .feature-section header{
+    padding-top: 1.5rem;
+    text-align: center;
+    align-items: center;
+ }
+ 
+ .image-container img{
+    border-radius: 1.5rem;
+    margin-bottom: -.75rem;
+    max-width:504px; 
+    max-height:324px;
+    
+   
+ }
+ 
+ .image-container{
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+ }
+ 
+ .feature-wrapper-text{
+    display: flex;
+    justify-content: center;
+    gap: 3.5rem;
+    
+    
+ }
+ 
+ .line-small{
+    border-bottom: 2px solid;
+    border-radius: 3rem;
+    
+ }
+ 
+ .left-additional-info-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 1rem;
+    max-width: 12.5rem;
+    flex-wrap: wrap;
+    padding-bottom: 1rem;
+    
+ }
+ 
+ .right-additional-info-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: right;
+    padding-right: 1rem;
+    max-width: 12.5rem;
+    flex-wrap: wrap;
+    padding-bottom: 1rem;
+    gap: 1rem;
+ 
+ }
+ 
