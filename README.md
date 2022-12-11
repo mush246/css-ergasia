@@ -4,8 +4,7 @@
 Group Project of a static HTML-CSS website for the subject [Intro to Computer Science (INF111)](https://eclass.aueb.gr/courses/INF111/)
 
 
-![Logo](https://i.ibb.co/fY9xvqh/image-2022-12-08-162900679.png)
-
+[![Logo](https://i.ibb.co/fY9xvqh/image-2022-12-08-162900679.png)](https://mush246.github.io/css-ergasia/)
 
 ## Authors
 
