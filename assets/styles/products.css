@@ -7,7 +7,7 @@ table{
     border: 2px solid var(--clr-primary-50);
     border-collapse: collapse;
     text-align: center;
-    width: 50rem;
+    width: 80rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
     
@@ -17,6 +17,8 @@ table{
  td{
     
     border: 2px solid var(--clr-primary-50) ;
+    font-size: 24px;
+    padding: 20px;
     
  }
 
