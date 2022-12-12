@@ -782,3 +782,8 @@ footer{
     box-shadow: 5px 10px 15px hsla(0, 0%, 0%, 0.25);
     border-radius: 1rem;
 }
+
+
+.p-width-33{
+    max-width: 33rem;
+}
