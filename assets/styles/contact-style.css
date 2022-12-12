@@ -1,23 +1,5 @@
 @import url(style.css);
 
-/* Text 
-
-p {
-    font-size: 18px;
-    padding: 5px;
-    padding-bottom: 50px;
-}
-
-ul {
-    list-style-type: square;
-    padding-left: 35px;
-    margin: 5px;
-}
-*/
-
-
-/* Table */
-
 .styled-table {
     border-collapse: collapse;
 	margin: 25px;
